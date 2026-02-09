@@ -32,7 +32,7 @@ export async function POST(request) {
     return NextResponse.json({ error: 'Invalid Action' }, { status: 400 });
 
   } catch (error) {
-    return NextResponse.json({ error: 'Internal Error' }, { status: 500 });
+    return NextResponse.json({ error: 'Internal Error: ' + error.message }, { status: 500 });
   }
 }
 
