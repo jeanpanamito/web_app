@@ -15,10 +15,11 @@ export default function Home() {
             if (res.ok) {
                 setStatus(action === 'SHUTDOWN' ? "COMMAND SENT" : "CANCELLED");
             } else {
-                setStatus("ERROR: AUTH FAILED");
+                const data = await res.json();
+                setStatus("ERROR: " + (data.error || "AUTH FAILED"));
             }
         } catch (e) {
-            setStatus("ERROR: NETWORK");
+            setStatus("ERROR: NETWORK/SERVER");
         }
     };
 
