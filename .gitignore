@@ -1,31 +1,153 @@
-# Dependencies
-node_modules
-
-# Next.js
-.next/
-out/
-build/
-dist/
-
-# Environment variables (IMPORTANT: Contains secrets!)
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.env
-
-# Debug
+﻿# Dependencies
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+*.lcov
+.nyc_output
+*.test.js.snap
+
+# Next.js
+.next/
+.next/cache/
+out/
+build/
+dist/
+.vercel
+.vercel/output/
+.turbo
+
+# Environment variables (IMPORTANT: Contains secrets!)
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Debug
+*.log
+logs/
+*.log.*
 
 # OS
+# macOS
 .DS_Store
-Thumbs.db
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
-# IDE
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# IDE / Editors
+# VSCode
 .vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# IntelliJ IDEA / WebStorm
 .idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim
 *.swp
 *.swo
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+tags
+[._]*.un~
+
+# Emacs
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+*.tsbuildinfo
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.save
 *~
+
+# Redis (if using local Redis)
+dump.rdb
+*.rdb
+redis-data/
+
+# Optional: Lock files (uncomment if you want to ignore them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
