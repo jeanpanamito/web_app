@@ -11,6 +11,6 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "@vercel/kv": "latest"
+    "redis": "^4.6.13"
   }
 }
